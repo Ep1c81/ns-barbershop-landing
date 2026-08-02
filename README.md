@@ -29,15 +29,15 @@ ns-barbershop-landing/
 │   ├── js/
 │   │   └── main.js
 │   └── images/
-│       ├── IMG_4350.jpg
-│       ├── IMG_4351.jpg
-│       ├── IMG_4352.jpg
-│       └── IMG_4354.jpg
+│       ├── IMG_4350.jpeg
+│       ├── IMG_4351.jpeg
+│       └── IMG_4354.jpeg
 └── README.md
 ```
 
-> **Images:** drop `IMG_4350.jpg`, `IMG_4351.jpg`, `IMG_4352.jpg`, and `IMG_4354.jpg`
-> into `assets/images/`. The layout references these filenames directly.
+> **Images:** `IMG_4350.jpeg`, `IMG_4351.jpeg`, and `IMG_4354.jpeg` live in
+> `assets/images/`. Remaining gallery slots use Unsplash fallback images loaded over
+> the network — swap them for local shots when available.
 
 ## Tech
 
