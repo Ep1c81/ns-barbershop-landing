@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>NS Barber Shop | Cortes Modernos y Clásicos</title>
+  <meta
+    name="description"
+    content="NS Barber Shop — Estilo maestro y pura distinción. Cortes modernos y clásicos para niños y adultos, perfilado de cejas para damas y lounge interno."
+  />
+
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome (star icons) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Urgency / FOMO banner -->
+  <div class="fomo-banner" id="fomoBanner">
+    <span
+      data-es="🔥 ALTA DEMANDA: ¡Espacios limitados para hoy! Reserva tu lugar."
+      data-en="🔥 HIGH DEMAND: Limited spots available today! Book your place now."
+      >🔥 ALTA DEMANDA: ¡Espacios limitados para hoy! Reserva tu lugar.</span
+    >
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="brand">NS BARBER SHOP</a>
+
+      <nav class="nav" id="navMenu">
+        <a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a>
+        <a href="#galeria" data-es="Galería" data-en="Gallery">Galería</a>
+        <a href="#features" data-es="Experiencia" data-en="Experience">Experiencia</a>
+        <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button
+          class="lang-toggle"
+          id="langToggle"
+          aria-label="Cambiar idioma / Switch language"
+        >
+          <span class="lang-toggle__current">ES</span>
+          <span class="lang-toggle__sep">/</span>
+          <span class="lang-toggle__other">EN</span>
+        </button>
+        <button
+          class="btn btn--ghost btn--sm nav__cta"
+          data-book="Reserva General"
+          data-es="Reservar"
+          data-en="Book Now"
+        >
+          Reservar
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow" data-es="Barbería de Élite" data-en="Elite Barbershop">
+        Barbería de Élite
+      </p>
+      <h1 class="hero__title">
+        <span data-es="Estilo Maestro." data-en="Master Style.">Estilo Maestro.</span>
+        <span class="gold" data-es="Pura Distinción." data-en="Pure Distinction."
+          >Pura Distinción.</span
+        >
+      </h1>
+      <p
+        class="hero__subtitle"
+        data-es="Cortes modernos y clásicos para niños y adultos, más perfilado de cejas para damas. Precisión, técnica y una experiencia a la altura de tu imagen."
+        data-en="Modern and classic cuts for kids and adults, plus eyebrow styling for women. Precision, technique and an experience worthy of your image."
+      >
+        Cortes modernos y clásicos para niños y adultos, más perfilado de cejas para
+        damas. Precisión, técnica y una experiencia a la altura de tu imagen.
+      </p>
+      <div class="hero__actions">
+        <a
+          class="btn btn--gold btn--lg"
+          href="https://wa.me/50687154471?text=Hola%20NS%20Barber%20Shop%2C%20quiero%20reservar%20una%20cita."
+          target="_blank"
+          rel="noopener"
+          data-es="Reservar por WhatsApp"
+          data-en="Book via WhatsApp"
+        >
+          Reservar por WhatsApp
+        </a>
+        <a
+          class="btn btn--ghost btn--lg"
+          href="#servicios"
+          data-es="Ver Servicios"
+          data-en="View Services"
+          >Ver Servicios</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Branding card -->
+  <section class="branding" id="contacto">
+    <div class="container">
+      <div class="branding__card">
+        <div class="branding__media">
+          <img
+            src="assets/images/IMG_4354.jpg"
+            alt="NS Barber Shop"
+            loading="lazy"
+          />
+        </div>
+        <div class="branding__body">
+          <h2 class="section__title" data-es="Bienvenido a NS" data-en="Welcome to NS">
+            Bienvenido a NS
+          </h2>
+          <p
+            class="branding__text"
+            data-es="Un espacio donde la tradición del barbero se encuentra con el estilo contemporáneo. Te esperamos."
+            data-en="A space where the barber's tradition meets contemporary style. We're waiting for you."
+          >
+            Un espacio donde la tradición del barbero se encuentra con el estilo
+            contemporáneo. Te esperamos.
+          </p>
+
+          <ul class="branding__info">
+            <li>
+              <span class="branding__label" data-es="Horario" data-en="Hours">Horario</span>
+              <span
+                class="branding__value"
+                data-es="Lunes a Sábado: 9:00 AM - 7:00 PM"
+                data-en="Monday to Saturday: 9:00 AM - 7:00 PM"
+                >Lunes a Sábado: 9:00 AM - 7:00 PM</span
+              >
+            </li>
+            <li>
+              <span class="branding__label" data-es="Teléfono" data-en="Phone">Teléfono</span>
+              <a class="branding__value branding__phone" href="tel:+50687154471"
+                >8715-4471</a
+              >
+            </li>
+          </ul>
+
+          <button
+            class="btn btn--gold"
+            data-book="Reserva General"
+            data-es="Reservar mi cita"
+            data-en="Book my appointment"
+          >
+            Reservar mi cita
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <p class="section__eyebrow" data-es="Por qué NS" data-en="Why NS">Por qué NS</p>
+      <h2 class="section__title section__title--center" data-es="La Experiencia" data-en="The Experience">
+        La Experiencia
+      </h2>
+
+      <div class="features__grid">
+        <article class="feature">
+          <div class="feature__icon">✂️</div>
+          <h3
+            class="feature__title"
+            data-es="Cortes Modernos y Clásicos"
+            data-en="Modern & Classic Cuts"
+          >
+            Cortes Modernos y Clásicos
+          </h3>
+          <p
+            class="feature__text"
+            data-es="Desde el fade más limpio hasta el clásico atemporal, adaptado a tu estilo."
+            data-en="From the cleanest fade to the timeless classic, tailored to your style."
+          >
+            Desde el fade más limpio hasta el clásico atemporal, adaptado a tu estilo.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon">✨</div>
+          <h3
+            class="feature__title"
+            data-es="Perfilado de Cejas (Damas)"
+            data-en="Eyebrow Styling (Ladies)"
+          >
+            Perfilado de Cejas (Damas)
+          </h3>
+          <p
+            class="feature__text"
+            data-es="Diseño y perfilado de cejas con técnica profesional para realzar tu mirada."
+            data-en="Eyebrow design and styling with professional technique to enhance your look."
+          >
+            Diseño y perfilado de cejas con técnica profesional para realzar tu mirada.
+          </p>
+        </article>
+
+        <article class="feature">
+          <div class="feature__icon">🥃</div>
+          <h3 class="feature__title" data-es="Lounge Interno" data-en="Interior Lounge">
+            Lounge Interno
+          </h3>
+          <p
+            class="feature__text"
+            data-es="Relájate en nuestro lounge mientras vives una experiencia premium de principio a fin."
+            data-en="Relax in our lounge while enjoying a premium experience from start to finish."
+          >
+            Relájate en nuestro lounge mientras vives una experiencia premium de principio
+            a fin.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <p class="section__eyebrow" data-es="Nuestro Trabajo" data-en="Our Work">
+        Nuestro Trabajo
+      </p>
+      <h2 class="section__title section__title--center" data-es="Galería" data-en="Gallery">
+        Galería
+      </h2>
+
+      <div class="gallery__grid">
+        <!-- 1 -->
+        <figure class="gallery__item">
+          <img src="assets/images/IMG_4350.jpg" alt="Corte Degradado Moderno" loading="lazy" />
+          <figcaption class="gallery__overlay">
+            <h3 class="gallery__style" data-es="Corte Degradado Moderno" data-en="Modern Skin / Mid Fade">
+              Corte Degradado Moderno
+            </h3>
+            <button
+              class="btn btn--gold btn--sm gallery__book"
+              data-book="Corte Degradado Moderno (Skin Fade / Mid Fade)"
+              data-es="Reservar este Estilo"
+              data-en="Book this Style"
+            >
+              Reservar este Estilo
+            </button>
+          </figcaption>
+        </figure>
+
+        <!-- 2 -->
+        <figure class="gallery__item">
+          <img src="assets/images/IMG_4351.jpg" alt="Corte Clásico para Caballero" loading="lazy" />
+          <figcaption class="gallery__overlay">
+            <h3 class="gallery__style" data-es="Corte Clásico para Caballero" data-en="Classic Scissor & Comb">
+              Corte Clásico para Caballero
+            </h3>
+            <button
+              class="btn btn--gold btn--sm gallery__book"
+              data-book="Corte Clásico para Caballero (Classic Scissor & Comb)"
+              data-es="Reservar este Estilo"
+              data-en="Book this Style"
+            >
+              Reservar este Estilo
+            </button>
+          </figcaption>
+        </figure>
+
+        <!-- 3 -->
+        <figure class="gallery__item">
+          <img src="assets/images/IMG_4352.jpg" alt="Degradado Texturizado para Jóvenes" loading="lazy" />
+          <figcaption class="gallery__overlay">
+            <h3 class="gallery__style" data-es="Degradado Texturizado para Jóvenes" data-en="Textured Crop Youth">
+              Degradado Texturizado para Jóvenes
+            </h3>
+            <button
+              class="btn btn--gold btn--sm gallery__book"
+              data-book="Degradado Texturizado para Jóvenes (Textured Crop Youth)"
+              data-es="Reservar este Estilo"
+              data-en="Book this Style"
+            >
+              Reservar este Estilo
+            </button>
+          </figcaption>
+        </figure>
+
+        <!-- 4 -->
+        <figure class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?auto=format&fit=crop&w=600&q=80"
+            alt="Corte Infantil / Niños"
+            loading="lazy"
+          />
+          <figcaption class="gallery__overlay">
+            <h3 class="gallery__style" data-es="Corte Infantil / Niños" data-en="Kid's Styled Cut">
+              Corte Infantil / Niños
+            </h3>
+            <button
+              class="btn btn--gold btn--sm gallery__book"
+              data-book="Corte Infantil / Niños (Kid's Styled Cut)"
+              data-es="Reservar este Estilo"
+              data-en="Book this Style"
+            >
+              Reservar este Estilo
+            </button>
+          </figcaption>
+        </figure>
+
+        <!-- 5 -->
+        <figure class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=600&q=80"
+            alt="Diseños y Perfilado de Cejas para Damas"
+            loading="lazy"
+          />
+          <figcaption class="gallery__overlay">
+            <h3 class="gallery__style" data-es="Perfilado de Cejas para Damas" data-en="Women's Eyebrow Arch Mapping">
+              Perfilado de Cejas para Damas
+            </h3>
+            <button
+              class="btn btn--gold btn--sm gallery__book"
+              data-book="Diseños y Perfilado de Cejas para Damas (Women's Eyebrow Arch Mapping)"
+              data-es="Reservar este Estilo"
+              data-en="Book this Style"
+            >
+              Reservar este Estilo
+            </button>
+          </figcaption>
+        </figure>
+
+        <!-- 6 -->
+        <figure class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=600&q=80"
+            alt="Arreglo Completo de Barba y Perfilado"
+            loading="lazy"
+          />
+          <figcaption class="gallery__overlay">
+            <h3 class="gallery__style" data-es="Arreglo Completo de Barba" data-en="Full Beard Sculpting">
+              Arreglo Completo de Barba
+            </h3>
+            <button
+              class="btn btn--gold btn--sm gallery__book"
+              data-book="Arreglo Completo de Barba y Perfilado (Full Beard Sculpting)"
+              data-es="Reservar este Estilo"
+              data-en="Book this Style"
+            >
+              Reservar este Estilo
+            </button>
+          </figcaption>
+        </figure>
+
+        <!-- 7 -->
+        <figure class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=600&q=80"
+            alt="Corte Taper Fade con Tijera"
+            loading="lazy"
+          />
+          <figcaption class="gallery__overlay">
+            <h3 class="gallery__style" data-es="Taper Fade con Tijera" data-en="Taper Fade Scissor Finish">
+              Taper Fade con Tijera
+            </h3>
+            <button
+              class="btn btn--gold btn--sm gallery__book"
+              data-book="Corte Taper Fade con Tijera (Taper Fade Scissor Finish)"
+              data-es="Reservar este Estilo"
+              data-en="Book this Style"
+            >
+              Reservar este Estilo
+            </button>
+          </figcaption>
+        </figure>
+
+        <!-- 8 -->
+        <figure class="gallery__item">
+          <img
+            src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80"
+            alt="Paquete VIP Barbería y Estilizado"
+            loading="lazy"
+          />
+          <figcaption class="gallery__overlay">
+            <h3 class="gallery__style" data-es="Paquete VIP Barbería" data-en="VIP Total Transformation">
+              Paquete VIP Barbería
+            </h3>
+            <button
+              class="btn btn--gold btn--sm gallery__book"
+              data-book="Paquete VIP Barbería y Estilizado (VIP Total Transformation)"
+              data-es="Reservar este Estilo"
+              data-en="Book this Style"
+            >
+              Reservar este Estilo
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <p class="section__eyebrow" data-es="Precisión en cada detalle" data-en="Precision in every detail">
+        Precisión en cada detalle
+      </p>
+      <h2 class="section__title section__title--center" data-es="Servicios" data-en="Services">
+        Servicios
+      </h2>
+
+      <div class="services__grid">
+        <article class="service">
+          <h3 class="service__title" data-es="Corte Adulto" data-en="Adult Cut">
+            Corte Adulto
+          </h3>
+          <p
+            class="service__desc"
+            data-es="Corte moderno o clásico con acabado profesional."
+            data-en="Modern or classic cut with a professional finish."
+          >
+            Corte moderno o clásico con acabado profesional.
+          </p>
+          <button
+            class="btn btn--gold btn--block"
+            data-book="Corte Adulto"
+            data-es="Reservar"
+            data-en="Book"
+          >
+            Reservar
+          </button>
+        </article>
+
+        <article class="service">
+          <h3
+            class="service__title"
+            data-es="Corte Niños y Jóvenes"
+            data-en="Kids & Teens Cut"
+          >
+            Corte Niños y Jóvenes
+          </h3>
+          <p
+            class="service__desc"
+            data-es="Estilo a la medida para los más jóvenes, con paciencia y cuidado."
+            data-en="Tailored style for the youngest, with patience and care."
+          >
+            Estilo a la medida para los más jóvenes, con paciencia y cuidado.
+          </p>
+          <button
+            class="btn btn--gold btn--block"
+            data-book="Corte Niños y Jóvenes"
+            data-es="Reservar"
+            data-en="Book"
+          >
+            Reservar
+          </button>
+        </article>
+
+        <article class="service service--featured">
+          <span class="service__badge" data-es="Destacado" data-en="Featured">Destacado</span>
+          <h3
+            class="service__title"
+            data-es="Perfilado de Cejas Damas"
+            data-en="Ladies Eyebrow Styling"
+          >
+            Perfilado de Cejas Damas
+          </h3>
+          <p
+            class="service__desc"
+            data-es="Diseño y perfilado profesional de cejas para realzar tu rostro."
+            data-en="Professional eyebrow design and styling to enhance your face."
+          >
+            Diseño y perfilado profesional de cejas para realzar tu rostro.
+          </p>
+          <button
+            class="btn btn--gold btn--block"
+            data-book="Perfilado de Cejas Damas"
+            data-es="Reservar"
+            data-en="Book"
+          >
+            Reservar
+          </button>
+        </article>
+
+        <article class="service">
+          <h3 class="service__title" data-es="Corte y Barba" data-en="Cut & Beard">
+            Corte y Barba
+          </h3>
+          <p
+            class="service__desc"
+            data-es="Corte completo más arreglo y perfilado de barba."
+            data-en="Full cut plus beard trim and styling."
+          >
+            Corte completo más arreglo y perfilado de barba.
+          </p>
+          <button
+            class="btn btn--gold btn--block"
+            data-book="Corte y Barba"
+            data-es="Reservar"
+            data-en="Book"
+          >
+            Reservar
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="reviews" id="resenas">
+    <div class="container">
+      <p class="section__eyebrow" data-es="Lo que dicen nuestros clientes" data-en="What our clients say">
+        Lo que dicen nuestros clientes
+      </p>
+      <h2 class="section__title section__title--center" data-es="Reseñas de Clientes" data-en="Customer Reviews">
+        Reseñas de Clientes
+      </h2>
+
+      <div class="reviews__rating">
+        <span class="reviews__score">5.0</span>
+        <span class="reviews__stars" aria-label="5 de 5 estrellas">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </span>
+        <span class="reviews__source">
+          <i class="fa-brands fa-google"></i>
+          <span data-es="Basado en reseñas de Google" data-en="Based on Google reviews"
+            >Basado en reseñas de Google</span
+          >
+        </span>
+      </div>
+
+      <div class="reviews__grid">
+        <!-- Fast service & friendly staff -->
+        <article class="review">
+          <span class="review__stars" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </span>
+          <p
+            class="review__quote"
+            data-es="&ldquo;Servicio súper rápido y el equipo es muy amable. Entré sin cita y en minutos ya me estaban atendiendo. ¡Volveré sin duda!&rdquo;"
+            data-en="&ldquo;Super fast service and the staff is really friendly. I walked in without an appointment and they took care of me within minutes. Definitely coming back!&rdquo;"
+          >
+            &ldquo;Servicio súper rápido y el equipo es muy amable. Entré sin cita y en
+            minutos ya me estaban atendiendo. ¡Volveré sin duda!&rdquo;
+          </p>
+          <div class="review__author">
+            <span class="review__avatar" aria-hidden="true">C</span>
+            <div>
+              <span class="review__name">Carlos Jiménez</span>
+              <span class="review__badge" data-es="Cliente frecuente" data-en="Regular client">Cliente frecuente</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- High-precision fades & kid-friendly patience -->
+        <article class="review">
+          <span class="review__stars" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </span>
+          <p
+            class="review__quote"
+            data-es="&ldquo;Los degradados quedan de precisión milimétrica. Además tuvieron muchísima paciencia con mi hijo pequeño; salió feliz con su corte.&rdquo;"
+            data-en="&ldquo;The fades are millimeter-precise. On top of that they were incredibly patient with my little boy; he left happy with his cut.&rdquo;"
+          >
+            &ldquo;Los degradados quedan de precisión milimétrica. Además tuvieron muchísima
+            paciencia con mi hijo pequeño; salió feliz con su corte.&rdquo;
+          </p>
+          <div class="review__author">
+            <span class="review__avatar" aria-hidden="true">D</span>
+            <div>
+              <span class="review__name">Daniela Rojas</span>
+              <span class="review__badge" data-es="Mamá satisfecha" data-en="Happy mom">Mamá satisfecha</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Excellent women's eyebrow arch mapping -->
+        <article class="review">
+          <span class="review__stars" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </span>
+          <p
+            class="review__quote"
+            data-es="&ldquo;El perfilado de cejas fue excelente. Entendieron perfectamente la forma que quería y el mapeo del arco quedó impecable. ¡Amé el resultado!&rdquo;"
+            data-en="&ldquo;The eyebrow shaping was excellent. They perfectly understood the shape I wanted and the arch mapping came out flawless. Loved the result!&rdquo;"
+          >
+            &ldquo;El perfilado de cejas fue excelente. Entendieron perfectamente la forma
+            que quería y el mapeo del arco quedó impecable. ¡Amé el resultado!&rdquo;
+          </p>
+          <div class="review__author">
+            <span class="review__avatar" aria-hidden="true">M</span>
+            <div>
+              <span class="review__name">María Fernanda Solís</span>
+              <span class="review__badge" data-es="Cliente Damas" data-en="Ladies client">Cliente Damas</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Clean, comfortable lounge environment -->
+        <article class="review">
+          <span class="review__stars" aria-label="5 estrellas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </span>
+          <p
+            class="review__quote"
+            data-es="&ldquo;El lounge es limpio, cómodo y con un ambiente de lujo. Se siente como una experiencia premium de principio a fin, no solo un corte.&rdquo;"
+            data-en="&ldquo;The lounge is clean, comfortable and has a luxury vibe. It feels like a premium experience from start to finish, not just a haircut.&rdquo;"
+          >
+            &ldquo;El lounge es limpio, cómodo y con un ambiente de lujo. Se siente como una
+            experiencia premium de principio a fin, no solo un corte.&rdquo;
+          </p>
+          <div class="review__author">
+            <span class="review__avatar" aria-hidden="true">A</span>
+            <div>
+              <span class="review__name">Andrés Vargas</span>
+              <span class="review__badge" data-es="Cliente VIP" data-en="VIP client">Cliente VIP</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2
+        class="cta__title"
+        data-es="Tu mejor versión te espera"
+        data-en="Your best look awaits"
+      >
+        Tu mejor versión te espera
+      </h2>
+      <p
+        class="cta__text"
+        data-es="Agenda hoy mismo y asegura tu espacio."
+        data-en="Book today and secure your spot."
+      >
+        Agenda hoy mismo y asegura tu espacio.
+      </p>
+      <button
+        class="btn btn--gold btn--lg"
+        data-book="Reserva General"
+        data-es="Reservar por WhatsApp"
+        data-en="Book via WhatsApp"
+      >
+        Reservar por WhatsApp
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">NS BARBER SHOP</div>
+      <p class="footer__tagline" data-es="Estilo Maestro. Pura Distinción." data-en="Master Style. Pure Distinction.">
+        Estilo Maestro. Pura Distinción.
+      </p>
+      <div class="footer__info">
+        <span data-es="Lunes a Sábado: 9:00 AM - 7:00 PM" data-en="Monday to Saturday: 9:00 AM - 7:00 PM">Lunes a Sábado: 9:00 AM - 7:00 PM</span>
+        <a href="tel:+50687154471">8715-4471</a>
+      </div>
+      <p class="footer__copy">© 2026 NS Barber Shop.
+        <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button (tablet / desktop) -->
+  <button
+    class="wa-float"
+    data-book="Reserva General"
+    aria-label="Reservar por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.53 0-3.03-.41-4.34-1.19l-.31-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"
+      />
+    </svg>
+  </button>
+
+  <!-- Sticky mobile bottom navigation bar -->
+  <nav class="mobile-bar" aria-label="Reserva rápida">
+    <a
+      class="mobile-bar__link"
+      href="tel:+50687154471"
+      data-es="Llamar"
+      data-en="Call"
+    >
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.4 11.4 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.57 1 1 0 0 1-.24 1.02l-2.21 2.2z"
+        />
+      </svg>
+      <span data-es="Llamar" data-en="Call">Llamar</span>
+    </a>
+
+    <button
+      class="mobile-bar__cta"
+      data-book="Reserva General"
+      data-es="Reserva por WhatsApp"
+      data-en="Book via WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.53 0-3.03-.41-4.34-1.19l-.31-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24z"
+        />
+      </svg>
+      <span data-es="Reserva por WhatsApp" data-en="Book via WhatsApp"
+        >Reserva por WhatsApp</span
+      >
+    </button>
+  </nav>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
