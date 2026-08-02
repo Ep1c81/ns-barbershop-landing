@@ -210,11 +210,13 @@ a {
 
 /* Navbar logo emblem */
 .nav-logo-img {
-  height: 42px;
+  height: 52px;
   width: auto;
-  border-radius: 6px;
-  border: 1px solid rgba(212, 175, 55, 0.4);
   object-fit: contain;
+  border: 1.5px solid rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+  border-radius: 8px;
+  padding: 2px;
 }
 
 /* Primary nav links are hidden on mobile (bottom bar + toggle cover intent) */
@@ -328,15 +330,6 @@ a {
   text-align: center;
   padding-top: 56px;
   padding-bottom: 56px;
-}
-
-/* Hero brand emblem (logo above the headline) */
-.hero-brand-emblem {
-  max-width: 180px;
-  height: auto;
-  margin: 0 auto 15px auto;
-  display: block;
-  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
 }
 
 .hero__eyebrow {
@@ -1046,6 +1039,10 @@ img.official-logo-img {
   .brand {
     font-size: 1.25rem;
     letter-spacing: 0.14em;
+  }
+
+  .nav-logo-img {
+    height: 65px;
   }
 
   /* Reveal the primary nav + navbar CTA on larger screens */
