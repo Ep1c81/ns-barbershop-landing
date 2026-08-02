@@ -689,8 +689,8 @@ img.official-logo-img {
 .service:nth-child(1) {
   background: linear-gradient(
       180deg,
-      rgba(20, 20, 22, 0.88) 0%,
-      rgba(10, 10, 11, 0.95) 100%
+      rgba(10, 10, 11, 0.6) 0%,
+      rgba(10, 10, 11, 0.75) 100%
     ),
     url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80")
       center / cover no-repeat;
@@ -699,8 +699,8 @@ img.official-logo-img {
 .service:nth-child(2) {
   background: linear-gradient(
       180deg,
-      rgba(20, 20, 22, 0.88) 0%,
-      rgba(10, 10, 11, 0.95) 100%
+      rgba(10, 10, 11, 0.6) 0%,
+      rgba(10, 10, 11, 0.75) 100%
     ),
     url("https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80")
       center / cover no-repeat;
@@ -709,8 +709,8 @@ img.official-logo-img {
 .service:nth-child(3) {
   background: linear-gradient(
       180deg,
-      rgba(20, 20, 22, 0.88) 0%,
-      rgba(10, 10, 11, 0.95) 100%
+      rgba(10, 10, 11, 0.6) 0%,
+      rgba(10, 10, 11, 0.75) 100%
     ),
     url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80")
       center / cover no-repeat;
@@ -719,8 +719,8 @@ img.official-logo-img {
 .service:nth-child(4) {
   background: linear-gradient(
       180deg,
-      rgba(20, 20, 22, 0.88) 0%,
-      rgba(10, 10, 11, 0.95) 100%
+      rgba(10, 10, 11, 0.6) 0%,
+      rgba(10, 10, 11, 0.75) 100%
     ),
     url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80")
       center / cover no-repeat;
@@ -730,6 +730,31 @@ img.official-logo-img {
   transform: translateY(-4px);
   border-color: #d4af37;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Hover: brighten the overlay further for an interactive glow effect */
+.service:nth-child(1):hover {
+  background: linear-gradient(180deg, rgba(10, 10, 11, 0.45) 0%, rgba(10, 10, 11, 0.45) 100%),
+    url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.service:nth-child(2):hover {
+  background: linear-gradient(180deg, rgba(10, 10, 11, 0.45) 0%, rgba(10, 10, 11, 0.45) 100%),
+    url("https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.service:nth-child(3):hover {
+  background: linear-gradient(180deg, rgba(10, 10, 11, 0.45) 0%, rgba(10, 10, 11, 0.45) 100%),
+    url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.service:nth-child(4):hover {
+  background: linear-gradient(180deg, rgba(10, 10, 11, 0.45) 0%, rgba(10, 10, 11, 0.45) 100%),
+    url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80")
+      center / cover no-repeat;
 }
 
 .service--featured {
@@ -755,13 +780,14 @@ img.official-logo-img {
   font-size: 1.16rem;
   font-weight: 600;
   color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95), 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .service__desc {
-  color: var(--text-dim);
+  color: #e4e4e7;
   font-size: 0.92rem;
   flex-grow: 1;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95), 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 /* Customer Reviews -------------------------------------------------------- */
