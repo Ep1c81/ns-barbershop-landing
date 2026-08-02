@@ -210,11 +210,11 @@ a {
 
 /* Navbar logo emblem */
 .nav-logo-img {
-  height: 40px;
+  height: 42px;
   width: auto;
+  border-radius: 6px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
   object-fit: contain;
-  border-radius: 4px;
-  border: 1px solid var(--border-gold);
 }
 
 /* Primary nav links are hidden on mobile (bottom bar + toggle cover intent) */
@@ -396,6 +396,10 @@ a {
 
 .branding__media {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
 
 .branding__media img {
@@ -403,6 +407,18 @@ a {
   height: 100%;
   object-fit: cover;
   min-height: 240px;
+}
+
+/* Official high-res branding banner (img. prefix overrides .branding__media img) */
+img.official-logo-img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+  object-fit: contain;
 }
 
 .branding__body {
@@ -474,18 +490,87 @@ a {
 }
 
 .feature {
-  background: var(--surface);
+  position: relative;
+  overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 32px 26px;
   text-align: center;
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px);
+  background: var(--surface);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease,
+    background 0.4s ease;
 }
 
+/* Seamless background images with dark gradient overlays --------------------
+   Card 1 — Cortes Modernos y Clásicos
+   Card 2 — Perfilado de Cejas Damas
+   Card 3 — Lounge Interno                                                     */
+.feature-card:nth-child(1) {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.88) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.feature-card:nth-child(2) {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.88) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.feature-card:nth-child(3) {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.88) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("../images/IMG_4351.jpeg") center / cover no-repeat;
+}
+
+/* Hover: lift, glowing gold border, and a slightly lighter top overlay */
 .feature:hover {
-  transform: translateY(-6px);
-  border-color: var(--gold);
-  box-shadow: var(--shadow-gold);
+  transform: translateY(-4px);
+  border-color: #d4af37;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.5), var(--shadow-gold);
+}
+
+.feature-card:nth-child(1):hover {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.75) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.feature-card:nth-child(2):hover {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.75) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.feature-card:nth-child(3):hover {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.75) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("../images/IMG_4351.jpeg") center / cover no-repeat;
 }
 
 .feature__icon {
@@ -498,10 +583,11 @@ a {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 12px;
+  color: #ffffff;
 }
 
 .feature__text {
-  color: var(--text-dim);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.96rem;
 }
 
