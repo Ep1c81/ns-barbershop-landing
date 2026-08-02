@@ -677,17 +677,62 @@ img.official-logo-img {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 30px 24px;
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  backdrop-filter: blur(3px);
+  transition: all 0.3s ease;
+}
+
+/* Title-matching background images with dark gradient overlays ------------
+   Card 1 — Corte Adulto y Peinado
+   Card 2 — Corte Niños y Jóvenes
+   Card 3 — Diseño y Perfilado de Cejas (Damas)
+   Card 4 — Corte y Arreglo de Barba                                         */
+.service:nth-child(1) {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.88) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.service:nth-child(2) {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.88) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.service:nth-child(3) {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.88) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80")
+      center / cover no-repeat;
+}
+
+.service:nth-child(4) {
+  background: linear-gradient(
+      180deg,
+      rgba(20, 20, 22, 0.88) 0%,
+      rgba(10, 10, 11, 0.95) 100%
+    ),
+    url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80")
+      center / cover no-repeat;
 }
 
 .service:hover {
-  transform: translateY(-6px);
-  border-color: var(--gold);
-  box-shadow: var(--shadow-gold);
+  transform: translateY(-4px);
+  border-color: #d4af37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
 .service--featured {
-  background: linear-gradient(160deg, #1a160c, #141416);
   border-color: var(--gold);
 }
 
@@ -709,6 +754,8 @@ img.official-logo-img {
   font-family: var(--font-display);
   font-size: 1.16rem;
   font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 .service__desc {
