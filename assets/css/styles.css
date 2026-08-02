@@ -9,6 +9,7 @@
   --surface: #141416;
   --surface-2: #1c1c20;
   --border: rgba(212, 175, 55, 0.18);
+  --border-gold: rgba(212, 175, 55, 0.4);
   --gold: #d4af37;
   --gold-soft: #e8cf7a;
   --gold-deep: #a8842a;
@@ -192,6 +193,9 @@ a {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.05rem;
@@ -200,8 +204,17 @@ a {
   white-space: nowrap;
 }
 
-.brand::first-letter {
+.gold-text {
   color: var(--gold);
+}
+
+/* Navbar logo emblem */
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  border: 1px solid var(--border-gold);
 }
 
 /* Primary nav links are hidden on mobile (bottom bar + toggle cover intent) */
@@ -315,6 +328,15 @@ a {
   text-align: center;
   padding-top: 56px;
   padding-bottom: 56px;
+}
+
+/* Hero brand emblem (logo above the headline) */
+.hero-brand-emblem {
+  max-width: 180px;
+  height: auto;
+  margin: 0 auto 15px auto;
+  display: block;
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
 }
 
 .hero__eyebrow {

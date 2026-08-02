@@ -9,6 +9,9 @@
     content="NS Barber Shop — Estilo maestro y pura distinción. Cortes modernos y clásicos para niños y adultos, perfilado de cejas para damas y lounge interno."
   />
 
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/barber.jpg" type="image/jpeg" />
+
   <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +42,15 @@
   <!-- Navbar -->
   <header class="navbar" id="navbar">
     <div class="container navbar__inner">
-      <a href="#hero" class="brand">NS BARBER SHOP</a>
+      <a href="#hero" class="brand logo">
+        <img
+          src="assets/images/barber.jpg"
+          alt="NS Barber Shop Emblem"
+          class="nav-logo-img"
+          onerror="this.style.display='none'"
+        />
+        <span class="brand__text"><span class="gold-text">NS</span> BARBER SHOP</span>
+      </a>
 
       <nav class="nav" id="navMenu">
         <a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a>
@@ -73,7 +84,13 @@
   <!-- Hero -->
   <section class="hero" id="hero">
     <div class="hero__overlay"></div>
-    <div class="container hero__inner">
+    <div class="container hero__inner hero-content">
+      <img
+        src="assets/images/barber.jpg"
+        alt="NS Barber Shop Logo"
+        class="hero-brand-emblem"
+        onerror="this.style.display='none'"
+      />
       <p class="hero__eyebrow" data-es="Barbería de Élite" data-en="Elite Barbershop">
         Barbería de Élite
       </p>
