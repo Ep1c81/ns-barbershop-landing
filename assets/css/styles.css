@@ -1014,6 +1014,26 @@ img.official-logo-img {
   margin-top: 10px;
 }
 
+.agency-credit {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  letter-spacing: 0.5px;
+}
+
+.agency-link {
+  color: #d4af37;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.agency-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.8);
+  text-decoration: underline;
+}
+
 /* Floating WhatsApp (hidden on mobile — the sticky bottom bar covers it) --- */
 .wa-float {
   display: none;
