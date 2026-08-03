@@ -133,6 +133,26 @@ a {
   box-shadow: 0 16px 48px rgba(212, 175, 55, 0.38);
 }
 
+/* WhatsApp action buttons — official brand green -------------------------- */
+.btn-whatsapp,
+.wa-float,
+.mobile-bar__cta {
+  background: #25d366 !important;
+  color: #ffffff !important;
+  border: 1px solid #1ebe57 !important;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:hover,
+.wa-float:hover,
+.mobile-bar__cta:hover {
+  background: #20ba5a !important;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
 .btn--ghost {
   background: transparent;
   color: var(--gold);
@@ -1015,17 +1035,13 @@ img.official-logo-img {
   animation: wa-pulse 2.4s ease-in-out infinite;
 }
 
-.wa-float:hover {
-  transform: scale(1.08);
-}
-
 @keyframes wa-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.45);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
   }
   50% {
-    box-shadow: 0 0 0 14px rgba(212, 175, 55, 0);
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
   }
 }
 
